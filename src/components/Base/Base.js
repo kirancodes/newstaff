@@ -88,28 +88,6 @@ const Base = ({ children }) => {
                   {/* <p><NavLink exact={true} activeClassName='is-active' to='/service/medical-coding'>Medical Coding</NavLink></p> */}
                   {/* <p><NavLink exact={true} activeClassName='is-active' to='/service/web-development'>Software Development</NavLink></p> */}
                 </div>
-                {/* <div className="col-md-3 policyes">
-                  <h6>About</h6>
-
-                  <p>
-                    <NavLink
-                      exact={true}
-                      activeClassName="is-active"
-                      to="/privacy-policy"
-                    >
-                      Privacy Policy
-                    </NavLink>
-                  </p>
-                  <p>
-                    <NavLink
-                      exact={true}
-                      activeClassName="is-active"
-                      to="/terms-condition"
-                    >
-                      Terms & Condition{" "}
-                    </NavLink>
-                  </p>
-                </div> */}
               </div>
             </div>
             <hr />
