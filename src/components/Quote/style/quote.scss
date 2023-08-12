@@ -1,0 +1,79 @@
+@import "../../../assets/css/variables";
+@import "../../../assets/css/mixin";
+
+
+*:focus {
+    outline: none;
+}
+
+.quote-wrapper {
+    margin-top: 3em;
+    h1{
+        color: $scnd-colour;
+        @include mainfont;
+        font-size: 40px;
+        font-weight: 900;
+        color: #180F48;
+        padding: 16px 11px 0px 10px;
+        span {
+            color: $prime-colour;
+        }
+        @include mdm{
+            font-size: 60px;
+        }
+    }
+    p{
+        @include mdm {
+            width: 80%;
+            margin: auto;
+            margin-bottom: 50px;
+        }
+        padding: 0px 15px 5px;
+        @include scndfont;
+        font-size: 17px;
+        color: #8482A0;
+        line-height: 25px;
+        @include mdm {
+            padding-right: 100px;
+        }
+    }
+    form {
+        padding: 15px;
+    }
+    input {
+        padding: 15px;
+        border: 0px;
+        border-radius: 0;
+        border-bottom: 1px solid $prime-colour;
+        margin-bottom: 15px ;
+        &:focus{
+            outline:none;
+            border: transparent;
+        }
+    }
+    select {
+        border: 0;
+        padding: 15px;
+        border-bottom: 1px solid $prime-colour;
+        margin-bottom: 15px;
+    }
+    textarea {
+        border: 0;
+        border-bottom: 1px solid $prime-colour;
+        padding: 15px;
+    }
+    button {
+        background-color: $prime-colour;
+        color: white;
+        font-weight: 700;
+        padding: 10px 30px;
+        display: flex;
+        margin: 25px auto;
+        border-radius: 20px;
+        border: 2px solid $prime-colour;
+        font-size: 18px;
+        @include mainfont
+        
+
+    }
+}

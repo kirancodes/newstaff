@@ -1,0 +1,110 @@
+@import "../../assets/css/_variables" ;
+@import "../../assets/css/mixin";
+*:focus {outline:none}
+*{
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-tap-highlight-color: transparent; /* For some Androids */
+}
+.navigation__wrapper{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 20px;
+    @include md {
+        padding: 0px;
+        flex-direction: column;
+        align-items: flex-start;
+        .quote-btn {
+            display: none;
+        }
+    }
+    img {
+        width: 150px;
+        @include md{
+            margin:10px ;
+        }
+    }
+    nav {
+        .active {
+            display: flex;
+        }
+         @include md{
+            width: 100%;
+        }
+        ul {
+            .is-active {
+                color: $prime-colour;
+            }
+             @include md {
+                display: none;
+                flex-direction: column;
+                width: 100%;
+                padding: 0;
+            }
+            a {
+                text-decoration: none;
+                list-style: none;
+                display: inline-block;
+                padding: 0 20px;
+                cursor: pointer;
+                color: $scnd-colour;
+                font-weight: 500;
+                font-size: 16px;
+                &:hover {
+                    color: $prime-colour;
+                    transition: 0.4s;
+                }
+                @include scndfont;
+                 @include md{
+                    text-align: center;
+                    width: 100%;
+                    padding: 20px;
+                }
+            }
+        }
+    }
+
+    .quote-btn {
+        border: 1px solid $prime-colour;
+        color: $prime-colour;
+        font-weight: 700;
+        padding: 10px 15px;
+        border-radius: 10px;
+        &:hover {
+            background-color: $prime-colour;
+            transition: 0.3s;
+            color: white;
+        }
+    }
+}
+
+.toggle-button{
+    position: absolute;
+    top: 1.3rem;
+    right: 1.3rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+     @include md {
+     display: flex;   
+    }
+    .bar {
+        height: 3px;
+        width: 100%;
+        background-color: $prime-colour;
+        border-radius: 10px;
+    }
+    
+}
+.spinner{ 
+    position: fixed;
+    z-index: 999;
+    margin: auto;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}

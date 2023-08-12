@@ -1,0 +1,94 @@
+*:focus {
+  outline: none;
+}
+
+.quote-wrapper {
+  margin-top: 3em;
+}
+
+.quote-wrapper h1 {
+  color: #180F48;
+  font-family: 'Roboto', sans-serif;
+  font-size: 40px;
+  font-weight: 900;
+  color: #180F48;
+  padding: 16px 11px 0px 10px;
+}
+
+.quote-wrapper h1 span {
+  color: #50B89F;
+}
+
+@media (min-width: 768px) {
+  .quote-wrapper h1 {
+    font-size: 60px;
+  }
+}
+
+.quote-wrapper p {
+  padding: 0px 15px 5px;
+  font-family: 'Lato', sans-serif;
+  font-size: 17px;
+  color: #8482A0;
+  line-height: 25px;
+}
+
+@media (min-width: 768px) {
+  .quote-wrapper p {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 50px;
+  }
+}
+
+@media (min-width: 768px) {
+  .quote-wrapper p {
+    padding-right: 100px;
+  }
+}
+
+.quote-wrapper form {
+  padding: 15px;
+}
+
+.quote-wrapper input {
+  padding: 15px;
+  border: 0px;
+  border-radius: 0;
+  border-bottom: 1px solid #50B89F;
+  margin-bottom: 15px;
+}
+
+.quote-wrapper input:focus {
+  outline: none;
+  border: transparent;
+}
+
+.quote-wrapper select {
+  border: 0;
+  padding: 15px;
+  border-bottom: 1px solid #50B89F;
+  margin-bottom: 15px;
+}
+
+.quote-wrapper textarea {
+  border: 0;
+  border-bottom: 1px solid #50B89F;
+  padding: 15px;
+}
+
+.quote-wrapper button {
+  background-color: #50B89F;
+  color: white;
+  font-weight: 700;
+  padding: 10px 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 25px auto;
+  border-radius: 20px;
+  border: 2px solid #50B89F;
+  font-size: 18px;
+  font-family: 'Roboto', sans-serif;
+}
+/*# sourceMappingURL=quote.css.map */

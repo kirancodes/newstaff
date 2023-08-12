@@ -1,0 +1,53 @@
+@import "../../../assets/css/variables";
+@import "../../../assets/css/mixin";
+
+.infos {
+    h6 {
+        font-weight: 700;
+        padding-left: 7px;
+        color: #50B89F;
+        font-size: 29px;
+    }
+
+    .aos-init {
+        margin-bottom: 30px;
+    }
+
+    a {
+        text-decoration: none;
+        font-size: 22px;
+        color: #50B89F;
+        font-weight: 500;
+        padding-left: 7px;
+    }
+}
+
+.social-wrap {
+    ul {
+        display: flex;
+        margin-bottom: 4em;
+        justify-content: space-evenly;
+
+        @include md {
+            justify-content: space-between;
+        }
+
+        border: 2px solid $prime-colour;
+        padding: 8px;
+        border-radius: 10px;
+
+        li {
+            list-style: none;
+
+            a {
+                color: $prime-colour;
+                transition: 0.4s;
+                font-size: 2em;
+
+                &:hover {
+                    color: $scnd-colour;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,102 @@
+@import "../../../assets/css/variables";
+@import "../../../assets/css/mixin";
+
+.detail-wrapper {
+    margin-bottom: 80px;
+    padding: 10px;
+
+    h1 {
+        color: $scnd-colour;
+        @include mainfont;
+        font-size: 40px;
+        font-weight: 900;
+
+        @include mdm {
+            padding: 40px 0px 0px 90px;
+        }
+
+        padding: 40px 0px 0px 5px;
+
+        span {
+            color: $prime-colour;
+        }
+
+        @include mdm {
+            font-size: 60px;
+        }
+    }
+
+    h4 {
+        color: $prime-colour;
+        opacity: 0.8;
+        margin-bottom: 20px;
+        padding-left: 6px;
+
+        @include mdm {
+            margin-left: 3.6em;
+            margin-bottom: 2em;
+        }
+    }
+
+    img {
+        border-radius: 15px;
+        margin: 10px 0px;
+        width: 70em;
+        margin: auto;
+        display: flex;
+        height: auto;
+
+        @include md {
+            width: 22em;
+        }
+    }
+
+    p {
+        padding: 6px;
+        margin-top: 15px;
+        @include scndfont;
+        color: $text;
+        font-size: 18px;
+
+        @include mdm {
+            padding-top: 25px;
+            margin: 0 5em;
+        }
+    }
+}
+
+.key-features {
+    h1 {
+        color: $scnd-colour;
+        @include mainfont;
+        font-size: 40px;
+        font-weight: 900;
+        margin-bottom: 10px;
+        padding-left: 0.3em;
+
+        @include mdm {
+            margin-top: 1em;
+            padding-left: 2.5em;
+        }
+    }
+
+    ul {
+        padding: 8px;
+        margin-bottom: 70px;
+        padding-left: 0.9em;
+
+        @include mdm {
+            padding-left: 6em;
+        }
+
+        li {
+            margin: 5px;
+            list-style: none;
+            text-transform: capitalize;
+            color: $prime-colour;
+            font-weight: 900;
+            @include mainfont;
+            font-size: 30px;
+        }
+    }
+}

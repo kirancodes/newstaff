@@ -1,0 +1,12 @@
+{
+    "version": 3,
+    "mappings": "AAGA,AAAA,iBAAiB,CAAC;EACd,OAAO,EAAE,IAAI;EACb,aAAa,EAAE,IAAI;CAsBtB;;AEXG,MAAM,EAAE,SAAS,EAAE,KAAK;EFb5B,AAAA,iBAAiB,CAAC;IAIV,OAAO,EAAE,MAAM;GAoBtB;;;AAxBD,AAMI,iBANa,CAMb,EAAE,CAAC;EACC,KAAK,ECOC,OAAO;ECmBlB,WAAW,EAAE,oBAAoB;EFxB5B,SAAS,EAAE,IAAI;EACf,WAAW,EAAE,GAAG;EAChB,OAAO,EAAE,iBAAiB;CAO7B;;AAlBL,AAYQ,iBAZS,CAMb,EAAE,CAME,IAAI,CAAA;EACA,KAAK,ECAF,OAAO;CDCb;;AEDL,MAAM,EAAE,SAAS,EAAE,KAAK;EFb5B,AAMI,iBANa,CAMb,EAAE,CAAC;IAUK,SAAS,EAAE,IAAI;GAEtB;;;AAlBL,AAmBI,iBAnBa,CAmBb,CAAC,CAAC;EEkBF,WAAW,EAAE,kBAAkB;EFhB3B,KAAK,ECNN,OAAO;EDON,SAAS,EAAE,IAAI;CAClB",
+    "sources": [
+        "legal.scss",
+        "../../../assets/css/_variables.scss",
+        "../../../assets/css/_mixin.scss",
+        "../../../assets/css/_variables.scss"
+    ],
+    "names": [],
+    "file": "legal.css"
+}

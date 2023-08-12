@@ -1,0 +1,432 @@
+@import "../../../assets/css/variables";
+@import "../../../assets/css/mixin";
+
+.banner-wrapper {
+    @include mdm {
+        margin: 10px 18px;
+    }
+
+    h1 {
+        color: $scnd-colour;
+        @include mainfont;
+        font-size: 40px;
+        font-weight: 900;
+        color: #180F48;
+        padding: 16px 11px 0px 10px;
+
+        span {
+            color: $prime-colour;
+        }
+
+        @include mdm {
+            font-size: 60px;
+        }
+    }
+
+    p {
+        padding: 0px 15px 5px;
+        @include scndfont;
+        font-size: 17px;
+        color: #8482A0;
+        line-height: 25px;
+
+        @include mdm {
+            padding-right: 100px;
+        }
+    }
+
+    img {
+        border-radius: 25px;
+
+        @include md {
+            order: 1
+        }
+    }
+
+    a {
+        background: #50B89F;
+        text-decoration: none;
+        border-radius: 20px;
+        color: white;
+        font-weight: 600;
+        @include scndfont;
+        font-size: 17px;
+        margin: 0px 15px;
+        padding: 12px 38px;
+        border: 2px solid $prime-colour;
+        transition: 0.2s;
+
+        &:hover {
+            color: $prime-colour;
+            background-color: white;
+            border: 2px solid $prime-colour;
+        }
+
+        &:active {
+            box-shadow: none;
+        }
+    }
+
+    .users-list {
+        @include mdm {
+            display: flex;
+
+            img {
+                width: 35%;
+            }
+        }
+
+        padding-top: 20px;
+
+        img {
+            max-width: 60%;
+            text-align: center;
+        }
+
+        p {
+            padding-left: 20px;
+
+            @include mdm {
+                margin: auto 0;
+            }
+        }
+
+        span {
+            color: $prime-colour;
+            font-weight: 800;
+        }
+    }
+}
+
+@include mdm {
+    .img-div {
+        order: 2;
+    }
+
+    .content-div {
+        order: 1;
+        margin: auto;
+    }
+}
+
+.aboutus-wrapper {
+    @include mdm {
+        margin: 90px 30px;
+    }
+
+    h1 {
+        @include mdm {
+            margin-left: 26%;
+        }
+
+        color: $scnd-colour;
+        @include mainfont;
+        font-size: 40px;
+        font-weight: 900;
+        padding: 20px 12px;
+
+        span {
+            color: $prime-colour;
+        }
+    }
+
+    .row {
+        padding: 0 20px;
+    }
+
+    .aboutus-content {
+        img {
+            display: none;
+        }
+
+        img {
+            @include mdm {
+                display: flex;
+                position: absolute;
+                max-width: 20%;
+                height: auto;
+                bottom: 0;
+            }
+        }
+
+        position: relative;
+        background-color: $prime-colour;
+        opacity: 0.9;
+        box-shadow: 0 2px 18px 0 rgba(4, 7, 22, 0.37);
+        border-radius: 18px;
+
+        p {
+            text-align: left;
+            font-size: 17px;
+            color: #FFFFFF;
+            padding: 30px 20px 0px 15px;
+            @include scndfont;
+        }
+
+        a {
+            text-decoration: none;
+
+            @include mdm {
+                padding: 8px 22px;
+                font-size: 16px;
+            }
+
+            float: right;
+            background: white;
+            border-radius: 20px;
+            color: $prime-colour;
+            font-weight: 600;
+            @include scndfont;
+            font-size: 17px;
+            margin: 0px 15px;
+            padding: 10px 32px;
+            border: 2px solid #4edbb9;
+            transition: 0.2s;
+            padding-bottom: 10px;
+            margin-bottom: 25px;
+
+            &:hover {
+                color: $prime-colour;
+                background-color: white;
+                border: 2px solid $prime-colour;
+            }
+        }
+    }
+}
+
+.services {
+    @include mainfont;
+
+    @include mdm {
+        margin: 0 90px;
+
+        .abt-detail {
+            width: 80%;
+            padding-bottom: 30px;
+        }
+    }
+
+    padding-top: 20px;
+
+    h1 {
+        color: $scnd-colour;
+        @include mainfont;
+        font-size: 40px;
+        font-weight: 900;
+        color: #180F48;
+        padding: 16px 11px 0px 10px;
+
+        span {
+            color: $prime-colour;
+        }
+    }
+
+    p {
+        padding: 0px 15px 5px;
+        @include scndfont;
+        font-size: 17px;
+        color: #8482A0;
+        line-height: 25px;
+    }
+
+    .card-wrapper {
+        .row {
+            justify-content: center
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        padding: 0px 25px;
+
+        .card {
+            height: 100%;
+            background-color: $prime-colour;
+            opacity: 0.9;
+            border: 1px solid rgba(80, 184, 159, 0.88);
+            border-radius: 15px;
+            box-shadow: 0 1px 1px rgba(0, 0, 0, 0.11),
+                0 2px 2px rgba(0, 0, 0, 0.11),
+                0 4px 4px rgba(0, 0, 0, 0.11),
+                0 6px 8px rgba(0, 0, 0, 0.11),
+                0 8px 16px rgba(0, 0, 0, 0.11);
+            border: 3px solid $prime-colour;
+
+            &:hover {
+                background-color: #3f937f;
+                transition: 0.4s;
+            }
+
+            img {
+                width: 60px;
+                height: auto;
+            }
+        }
+    }
+
+    .card {
+        margin-bottom: 15px;
+
+        .card-body {
+            display: flex;
+
+            img {
+                margin-left: 10px;
+            }
+
+            h5 {
+                margin: auto 15px;
+            }
+
+            @include mdm {
+                padding: 25px;
+                display: block;
+
+                img {
+                    display: flex;
+                    margin: auto;
+                }
+
+                h5 {
+                    margin: 15px 0px;
+                    text-align: center;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+}
+
+
+// Contacts 
+
+.contacts {
+    padding: 8px;
+
+    @include mdm {
+        padding: 50px 90px;
+    }
+
+    margin: 40px 10px;
+
+    img {
+        border-radius: 20px;
+    }
+
+    h2 {
+        color: $scnd-colour;
+        @include mainfont;
+        font-size: 40px;
+        font-weight: 900;
+        color: #180F48;
+        padding: 16px 11px 0px 5px;
+    }
+
+    p {
+        padding: 0px 8px 5px;
+        @include scndfont;
+        font-size: 17px;
+        color: #8482A0;
+
+        @include mdm {
+            padding-right: 80px;
+        }
+    }
+
+    .txtarea {
+        position: relative;
+    }
+
+    input,
+    textarea {
+        padding: 20px;
+        border: 0px;
+        border-bottom: 2px solid rgba(128, 128, 128, 0.281);
+        border-radius: 0px;
+    }
+
+    textarea::placeholder {
+        position: absolute;
+        bottom: 20px;
+    }
+
+    button {
+        background: #50B89F;
+        border-radius: 34px;
+        color: white;
+        margin-top: 30px;
+        float: right;
+        @include mainfont;
+        font-weight: 700;
+        padding: 10px 35px;
+        font-size: 17px;
+        border: 2px solid $prime-colour;
+        transition: 0.4;
+
+        &:hover {
+            background-color: white;
+            color: $prime-colour;
+        }
+
+    }
+}
+
+// Footer
+footer {
+    padding: 50px 10px 10px;
+    @include scndfont;
+    background-color: $prime-colour;
+    opacity: 0.9;
+    color: white;
+
+    a {
+        color: white;
+        text-decoration: none;
+        transition: 0.2s;
+
+        &:hover {
+            color: white;
+            opacity: 0.6;
+        }
+    }
+
+    h6 {
+        font-weight: 800;
+        padding-bottom: 15px;
+        font-size: 18px;
+    }
+
+    .abt-company {
+        padding-bottom: 25px;
+    }
+
+    .policyes {
+        padding-top: 20px;
+    }
+
+    .powered {
+        padding-top: 0;
+
+        a {
+            text-decoration: none;
+            color: white;
+            font-weight: 800;
+
+        }
+    }
+
+    @include mdm {
+        .policyes {
+            padding-top: 0;
+        }
+
+        .company {
+            margin-left: 80px;
+        }
+    }
+}
+
+.headerContact {
+    margin-bottom: 70px;
+}

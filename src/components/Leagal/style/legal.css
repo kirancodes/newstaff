@@ -1,0 +1,35 @@
+.privacyp-content {
+  padding: 15px;
+  margin-bottom: 70px;
+}
+
+@media (min-width: 768px) {
+  .privacyp-content {
+    padding: 0 90px;
+  }
+}
+
+.privacyp-content h1 {
+  color: #180F48;
+  font-family: 'Roboto', sans-serif;
+  font-size: 40px;
+  font-weight: 900;
+  padding: 40px 0px 20px 0px;
+}
+
+.privacyp-content h1 span {
+  color: #50B89F;
+}
+
+@media (min-width: 768px) {
+  .privacyp-content h1 {
+    font-size: 60px;
+  }
+}
+
+.privacyp-content p {
+  font-family: 'Lato', sans-serif;
+  color: #8482A0;
+  font-size: 18px;
+}
+/*# sourceMappingURL=legal.css.map */
